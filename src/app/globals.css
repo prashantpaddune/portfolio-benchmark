@@ -3,6 +3,8 @@
 
 @theme inline {
     --color-background: var(--background);
+    --color-black: var(--black);
+    --color-white: var(--white);
     --color-foreground: var(--foreground);
     --color-navbar-ring: var(--navbar-ring);
     --color-navbar-border: var(--navbar-border);
@@ -38,6 +40,8 @@
 :root {
     --radius: 0.625rem;
     --background: #101010;
+    --black: #000000;
+    --white: #ffffff;
     --foreground: #FBFBFB;
     --primary: #EBEBEB;
     --primary-foreground: #343434;

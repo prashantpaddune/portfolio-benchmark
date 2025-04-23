@@ -14,7 +14,7 @@ type LayoutProps = {
 const RootLayout = ({ children }: LayoutProps) => {
     return (
         <html lang="en">
-            <body className="min-h-screen bg-background">
+            <body className="min-h-screen bg-black">
                 {children}
             </body>
         </html>
