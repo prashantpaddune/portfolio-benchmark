@@ -1,5 +1,7 @@
+import {ReactNode} from "react";
+
 export type SummaryRow = {
-    metric:   string
+    metric:   ReactNode
     value:    string
     benchmark:string
 }
