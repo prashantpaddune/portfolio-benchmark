@@ -36,7 +36,7 @@ const ReturnsChart = ({
             <CardHeader className="px-4">
                 <CardTitle className="text-white text-xl font-medium">Returns (%)</CardTitle>
             </CardHeader>
-            <CardContent className="px-4">
+            <CardContent>
                 <ChartContainer
                     id="returns"
                     className="w-full -ml-8 mb-0"
