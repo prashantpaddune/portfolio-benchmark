@@ -17,7 +17,7 @@ const Header = () => {
             <h1 className="text-2xl font-semibold">Portfolio &amp; Benchmark</h1>
 
             <div className="flex items-center">
-                <div className="h-10 w-px bg-border mx-4" />
+                <div className="h-10 w-px bg-navbar-border mx-4" />
 
                 <div className="flex items-center space-x-2">
                     <DatePicker
