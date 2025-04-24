@@ -13,7 +13,7 @@ export default function Home() {
     return (
         <>
             <Header/>
-            <div className="flex w-full gap-2 p-4">
+            <div className="flex w-full gap-2 p-4 pb-0">
                 <Widget
                     title="Performance Summary"
                     columns={profileSummaryColumns}
@@ -27,7 +27,7 @@ export default function Home() {
                     striped
                 />
             </div>
-            <div className="flex w-full px-4 pb-4">
+            <div className="flex w-full px-4 py-2">
                 <ReturnsChart data={sampleData} height={400}/>
             </div>
         </>

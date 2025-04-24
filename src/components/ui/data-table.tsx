@@ -46,9 +46,11 @@ export function DataTable<TData, TValue>({
                                 <TableHead
                                     key={header.id}
                                     className={[
-                                        "bg-black text-white",
-                                        isFirst && "rounded-tl-lg",
-                                        isLast  && "rounded-tr-lg",
+                                        "bg-black text-muted-foreground text-sm border-l border-b-border",
+                                        isFirst && "rounded-tl-md",
+                                        isFirst && "border-none",
+                                        !isLast && "border-l",
+                                        isLast  && "rounded-tr-md",
                                     ]
                                         .filter(Boolean)
                                         .join(" ")}
@@ -70,10 +72,10 @@ export function DataTable<TData, TValue>({
                 {table.getRowModel().rows.map((row, rowIndex) => (
                     <TableRow
                         key={row.id}
-                        className={striped && rowIndex % 2 === 0 ? "bg-input" : ""}
+                        className={striped && rowIndex % 2 === 0 ? "bg-ring border-none" : "bg-background border-none"}
                     >
                         {row.getVisibleCells().map((cell) => (
-                            <TableCell key={cell.id}>
+                            <TableCell className="font-normal text-sm" key={cell.id}>
                                 {flexRender(cell.column.columnDef.cell, cell.getContext())}
                             </TableCell>
                         ))}

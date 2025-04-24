@@ -32,14 +32,14 @@ const ReturnsChart = ({
     }
 
     return (
-        <Card className="w-full bg-background text-card-foreground gap-2 py-4">
+        <Card className="w-full bg-background border-navbar-border rounded-sm text-card-foreground gap-2 py-4">
             <CardHeader className="px-4">
-                <CardTitle>Returns (%)</CardTitle>
+                <CardTitle className="text-white text-xl font-medium">Returns (%)</CardTitle>
             </CardHeader>
             <CardContent className="px-4">
                 <ChartContainer
                     id="returns"
-                    className="w-full -ml-6 mb-0"
+                    className="w-full -ml-8 mb-0"
                     style={{ height }}
                     config={config}
                 >
@@ -47,7 +47,7 @@ const ReturnsChart = ({
                         data={data}
                         margin={{ top: 16, right: 24, left: 24, bottom: 48 }}
                     >
-                        <CartesianGrid stroke="#222" vertical={false} />
+                        <CartesianGrid stroke="#222" />
 
                         <XAxis
                             dataKey="date"
@@ -66,7 +66,7 @@ const ReturnsChart = ({
                         <ChartLegend
                             verticalAlign="bottom"
                             content={
-                                <ChartLegendContent className="gap-6 [&>div>div]:h-2.5 [&>div>div]:w-2.5" />
+                                <ChartLegendContent className="gap-6 [&>div>div]:h-3.5 [&>div>div]:w-3.5 text-muted" />
                             }
                         />
 

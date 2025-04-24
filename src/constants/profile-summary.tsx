@@ -19,17 +19,17 @@ export const profileSummaryColumns: ColumnDef<SummaryRow>[] = [
 
 export const profileSummaryData: SummaryRow[] = [
     {
-        metric: <Badge variant="outline" className="text-accent">Overall Return (%)</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent font-normal text-sm rounded-4xl">Overall Return (%)</Badge>,
         value: "20.50",
         benchmark: "$316.00"
     },
     {
-        metric: <Badge variant="outline" className="text-accent">Realized Risk (%)</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent font-normal text-sm rounded-4xl">Realized Risk (%)</Badge>,
         value: "26.15",
         benchmark: "$316.00"
     },
     {
-        metric: <Badge variant="outline" className="text-accent">Sharpe Ratio</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent font-normal text-sm rounded-4xl">Sharpe Ratio</Badge>,
         value: "24.50",
         benchmark: "$316.00"
     },

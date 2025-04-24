@@ -39,10 +39,11 @@ const DatePicker = ({
                     <CalendarIcon className="h-4 w-4" />
                 </Button>
             </PopoverTrigger>
-            <PopoverContent className="w-auto p-0" align="start">
+            <PopoverContent className="bg-background" align="start">
                 <Calendar
                     initialFocus
                     mode="single"
+                    className="bg-background"
                     selected={value}
                     onSelect={(dateValue) => {
                         if (dateValue) {

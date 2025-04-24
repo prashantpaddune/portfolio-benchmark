@@ -17,17 +17,17 @@ export const valuationColumns: ColumnDef<SummaryRow>[] = [
 
 export const valuationData: SummaryRow[] = [
     {
-        metric: <Badge variant="outline" className="text-accent">P / E Ratio</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent text-sm font-normal rounded-4xl">P / E Ratio</Badge>,
         value: "20.50",
         benchmark: "$316.00"
     },
     {
-        metric: <Badge variant="outline" className="text-accent">P / B Ratio</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent text-sm font-normal rounded-4xl">P / B Ratio</Badge>,
         value: "26.15",
         benchmark: "$316.00"
     },
     {
-        metric: <Badge variant="outline" className="text-accent">ROE</Badge>,
+        metric: <Badge variant="outline" className="bg-navbar-border border-input text-accent text-sm font-normal rounded-4xl">ROE</Badge>,
         value: "24.50",
         benchmark: "$316.00"
     },
